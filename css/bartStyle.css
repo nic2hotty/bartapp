@@ -1,0 +1,122 @@
+
+div#nicTesting {
+    padding-left: 15%;
+    
+
+    
+}
+
+h1{
+      font-size: 150px;  
+      font-weight: bolder;
+     
+}
+
+#trainArriving h2 {
+     font-size: 75px; 
+}
+
+#trainArriving {
+    
+
+     text-align: center;
+     font-weight: bolder;
+
+    
+           
+}
+
+.bartFlash {
+     /* This is the animation to flash the bart times */
+    
+    position: relative; 
+    animation-timing-function: linear;
+    animation-name: bartFlash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+
+body{background-color:black;
+color: orangered;
+font-family: Arial, Helvetica, sans-serif;
+/** font-family: 'Raleway Dots', cursive; **/
+font-weight: bolder;
+    
+}
+
+form#myForm {
+    float: right;
+    padding-top: 8px;
+}
+
+#bartInstructions{
+    color: black;
+}
+
+#bartTimesPlease {color: lightslategrey;
+background-color:#222;
+border: lightslategrey solid 1px;
+border-radius: 15px;margin-top:10px;
+float: right;
+    
+}
+
+#bartTimesPlease:hover {border: orangered solid 1px;
+color: orangered;
+border-radius: 15px;margin-top:10px;
+    
+}
+
+#arrivalsPlease {
+     font-family: 'Press Start 2P', cursive;
+     text-transform: uppercase;
+     line-height: 200%;
+     font-size: 600%;
+    
+    /* This is the animation to flash the bart times */
+    
+    position: relative; 
+    animation-timing-function: linear;
+    animation-name: bartFlash;
+    animation-duration: 1s;
+    animation-iteration-count: 8;
+
+    
+}
+
+#timesPlease {
+    font-family: 'Press Start 2P', cursive;
+     text-transform: uppercase;
+     line-height: 200%;
+     text-align: justify;
+     
+     /* this is the association to the bartScroll animation */
+    position: relative; 
+    animation-timing-function: linear;
+    animation-name: bartScroll;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;  
+}
+
+/* This is the animation to scroll the bart times */
+
+@keyframes bartScroll {
+    0%   {left:0px; top:-100px;}
+ 
+    100% {left:0px; top:800px;}
+}
+
+/* This is the animation to scroll the bart times */
+
+@keyframes bartFlash {
+   0%   {opacity: 0.0;}
+   
+   100%   {opacity: 1.0;}
+}
+
+
